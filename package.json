@@ -1,15 +1,21 @@
 {
   "name": "vue-earl-calendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "calendar",
   "author": "earl <z604458675@gmail.com>",
   "private": false,
   "main": "dist/index.js",
+  "repository": "https://github.com/EARL8888/vue-earl-calendar",
+  "keywords": [
+    "vue-earl-calendar",
+    "vue-calendar",
+    "calendar",
+    "vue",
+    "vue calendar"
+  ],
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
     "less": "^3.9.0",
@@ -29,6 +35,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.2.0",
     "css-loader": "^0.28.0",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^10.2.1",

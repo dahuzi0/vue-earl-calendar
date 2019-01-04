@@ -5,6 +5,8 @@
 > calendar
 > ![](https://github.com/EARL8888/SrcPath/blob/master/calendar/snipaste20190104_181818.png?raw=true)
 
+github: https://github.com/EARL8888/vue-earl-calendar
+
 ## Build Setup
 
 ``` bash
