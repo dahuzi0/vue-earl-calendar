@@ -19,7 +19,7 @@ import vueEarlCalendar from 'vue-earl-calendar'
 Vue.use(vueEarlCalendar, {locale: 'en'})
 ```
 ### VueFile
-``` json
+```javascript
 <template>
   <div id="app">
     <vue-earl-calendar
