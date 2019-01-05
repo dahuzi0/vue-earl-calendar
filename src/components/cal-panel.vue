@@ -1,9 +1,9 @@
 <template>
   <div class="cal-wrapper">
     <div class="cal-header">
-      <div class="l" @click="preMonth"><div class="arrow-left"><img src="./button-left.png" style="width: 50%"></div></div>
+      <div class="l" @click="preMonth"><div class="button-left-bg"><p class="arrow-left icon"></p></div></div>
       <div class="title">{{curYearMonth}}</div>
-      <div class="r" @click="nextMonth"><div class="arrow-right"><img src="./button-right.png" style="width: 50%"></div></div>
+      <div class="r" @click="nextMonth"><div class="button-right-bg"><p class="arrow-right icon"></p></div></div>
     </div>
     <div class="cal-body">
       <div class="weeks">

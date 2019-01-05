@@ -139,7 +139,7 @@ export default {
 @large-padding: 15px;
 @small-padding: 10px;
 
-@icon-border-size: 1px;
+@icon-border-size: 1.5px;
 @media screen and (min-width: 768px) {
   .__vev_calendar-wrapper{
     max-width: 1200px;
@@ -283,13 +283,13 @@ export default {
             // border: 1px solid @base-blue;
             background-color: #fff;
             border-radius: 50%;
-            width: 20px;
-            height: 20px;
+            width: 22px;
+            height: 22px;
             position: absolute;
             left: 50%;
             top: 50%;
             z-index: 1;
-            margin-left: -9.5px;
+            margin-left: -11px;
             margin-top: -11px;
           }
           .is-today{
@@ -360,15 +360,57 @@ export default {
       }
     }
   }
-  .arrow-left {
-    color: #000;
-    position: absolute;
-    left: 7.5px;
+  .button-left-bg {
+    width: 20px;
+    height: 20px;
+    background-color: #4b4bfd;
+    margin-left: -7px;
+    border-radius: 50%;
   }
-  .arrow-right {
+  .button-right-bg {
+    width: 20px;
+    height: 20px;
+    background-color: #4b4bfd;
+    margin-left: 6px;
+    border-radius: 50%;
+  }
+  .arrow-left.icon {
     color: #000;
     position: absolute;
-    right: 7.5px;
+    left: 6%;
+    margin-top: 10px;
+  }
+  .arrow-left.icon:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: -3px;
+    width: 5px;
+    height: 5px;
+    color: #fff;
+    border-top: solid @icon-border-size currentColor;
+    border-right: solid @icon-border-size currentColor;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .arrow-right.icon {
+    color: #000;
+    position: absolute;
+    right: 6%;
+    margin-top: 10px;
+  }
+  .arrow-right.icon:before {
+    content: '';
+    position: absolute;
+    right: 1px;
+    top: -3px;
+    width: 5px;
+    height: 5px;
+    color: #fff;
+    border-top: solid @icon-border-size currentColor;
+    border-right: solid @icon-border-size currentColor;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   h3, p{
     margin: 0;
