@@ -4,6 +4,7 @@
 
 > calendar
 > ![](https://github.com/EARL8888/SrcPath/blob/master/calendar/snipaste20190104_181818.png?raw=true)
+> ![](https://github.com/EARL8888/SrcPath/blob/master/calendar/2019-01-05%2018.40.17.gif?raw=true)
 
 github: https://github.com/EARL8888/vue-earl-calendar
 ## Installation
