@@ -22,7 +22,11 @@ export default {
   },
   data () {
     return {
-      selectedDayEvents: this.defaultSelectedDay
+      defaultSelectedDayValue: {
+        date: 'all',
+        events: this.events || [] // default show all event
+      },
+      selectedDayEvents: this.defaultSelectedDay ? this.defaultSelectedDay : Object.assign({}, this.defaultSelectedDayValue)
     }
   },
   props: {
@@ -147,6 +151,8 @@ export default {
     .cal-wrapper{
       /*width: 50%;*/
       /*padding: 100px 50px;*/
+      background-color: #fff;
+      border-radius: 10px;
       .date-num{
         line-height: 37px;
       }
@@ -166,10 +172,12 @@ export default {
 @media screen and (max-width: 767px) {
   .__vev_calendar-wrapper{
     .cal-wrapper{
-      width: 100%;
-      padding: 10px 5px;
+      /*width: 100%;*/
+      /*padding: 10px 5px;*/
+      background-color: #fff;
+      border-radius: 10px;
       .date-num{
-        line-height: 42px;
+        line-height: 37px;
       }
     }
     .events-wrapper{
@@ -222,14 +230,16 @@ export default {
         font-weight: 900;
       }
       .l{
-        text-align: left;
+        text-align: center;
+        text-align: -webkit-center;
         width: 20%;
         cursor: pointer;
         user-select: none;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
       .r{
-        text-align: right;
+        text-align: center;
+        text-align: -webkit-center;
         width: 20%;
         cursor: pointer;
         user-select: none;
@@ -363,6 +373,7 @@ export default {
   .button-left-bg {
     width: 20px;
     height: 20px;
+    position: relative;
     background-color: #4b4bfd;
     margin-left: -7px;
     border-radius: 50%;
@@ -370,6 +381,7 @@ export default {
   .button-right-bg {
     width: 20px;
     height: 20px;
+    position: relative;
     background-color: #4b4bfd;
     margin-left: 6px;
     border-radius: 50%;
@@ -383,7 +395,7 @@ export default {
   .arrow-left.icon:before {
     content: '';
     position: absolute;
-    left: 2px;
+    left: 7px;
     top: -3px;
     width: 5px;
     height: 5px;
@@ -402,7 +414,7 @@ export default {
   .arrow-right.icon:before {
     content: '';
     position: absolute;
-    right: 1px;
+    right: 7px;
     top: -3px;
     width: 5px;
     height: 5px;

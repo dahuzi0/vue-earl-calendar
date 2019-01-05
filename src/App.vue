@@ -17,38 +17,31 @@ export default {
     return {
       demoEvents: [{
         date: `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()}`,
-        title: 'Title-1',
-        desc: 'longlonglong description'
+        title: 'Title-1'
       }, {
         date: `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()}`,
-        title: 'Title-1',
-        desc: 'longlonglong description'
-      }, {
-        date: `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()}`,
-        title: 'Title-1',
-        desc: 'longlonglong description'
-      }, {
-        date: `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()}`,
-        title: 'Title-1',
-        desc: 'longlonglong description'
-      }, {
-        date: `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()}`,
-        title: 'Title-1',
-        desc: 'longlonglong description'
-      }, {
-        date: `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()}`,
-        title: 'Title-1',
-        desc: 'longlonglong description'
-      }, {
-        date: `${today.getFullYear()}/${today.getMonth() + 1}/15`,
-        title: 'Title-1',
-        desc: 'longlonglong description'
-      }, {
-        date: `${today.getFullYear()}/${today.getMonth() + 1}/24`,
         title: 'Title-2'
       }, {
+        date: `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()}`,
+        title: 'Title-3'
+      }, {
+        date: `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()}`,
+        title: 'Title-4'
+      }, {
+        date: `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()}`,
+        title: 'Title-5'
+      }, {
+        date: `${today.getFullYear()}/${today.getMonth() + 1}/${today.getDate()}`,
+        title: 'Title-6'
+      }, {
+        date: `${today.getFullYear()}/${today.getMonth() + 1}/15`,
+        title: 'Title-7'
+      }, {
+        date: `${today.getFullYear()}/${today.getMonth() + 1}/24`,
+        title: 'Title-8'
+      }, {
         date: `${today.getFullYear()}/${today.getMonth() === 11 ? 1 : today.getMonth() + 2}/06`,
-        title: 'Title-3',
+        title: 'Title-9',
         desc: 'description'
       }],
       defaultSelectedDay: {
