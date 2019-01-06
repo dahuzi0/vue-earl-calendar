@@ -1,8 +1,9 @@
 {
   "name": "vue-earl-calendar",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "calendar",
   "author": "earl <z604458675@gmail.com>",
+  "license": "MIT",
   "private": false,
   "main": "dist/index.js",
   "repository": "https://github.com/EARL8888/vue-earl-calendar",
